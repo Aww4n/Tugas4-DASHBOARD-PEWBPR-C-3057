@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pet Shop Admin</title>
+	<link rel="stylesheet" href="dashboard_style.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pet Shop Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Customers</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="statistics">
+                <h2>Statistics</h2>
+                <div class="stat-card">
+                    <h3>Total Products</h3>
+                    <p>50</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Orders</h3>
+                    <p>100</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Customers</h3>
+                    <p>200</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h3>Selamat Datang, <?php echo $_SESSION['username']; ?></h3>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Dashboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No ID</th>
+                        <th>No HP</th>
+                        <th>Owner</th>
+						<th>Nama Hewan</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table border="5" cellpadding="10">
+						<tr>
+							<td>01</td>
+							<td>085332424776</td>
+							<td>Aji Dedi</td>
+							<td>anjing</td>
+							<td>
+								<div class="flex-column">
+									<div class="button1">Edit</div>
+									<div class="button2">Hapus</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>082980990663</td>
+							<td>Beni Fahri</td>
+							<td>kucing</td>
+							<td>
+								<div class="flex-column">
+									<div class="button1">Edit</div>
+									<div class="button2">Hapus</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>088164655900</td>
+							<td>Caca Gani</td>
+							<td>ikan</td>
+							<td>
+								<div class="flex-column">
+									<div class="button1">Edit</div>
+									<div class="button2">Hapus</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
